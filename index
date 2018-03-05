@@ -97,11 +97,11 @@
  </main>
  <footer>
        <p><strong>#visitSEDONA</strong></p>
-       <div class="footer-social">
-         <a class="social twitter" title="twitter"></a>
-         <a class="social facebook" title="facebook"></a>
-         <a class="social youtube" title="youtube"></a>
-       </div>
+       <ul class="footer-social">
+         <li><a class="social twitter" title="twitter"></a></li>
+         <li><a class="social facebook" title="facebook"></a></li>
+         <li><a class="social youtube" title="youtube"></a></li>
+       </ul>
        <p>WEBSITE by<img src="#"></p>
  </footer>
 </body>

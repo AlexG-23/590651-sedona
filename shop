@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+       <meta charset="utf-8">
+       <title>SEDONA</title>
+</head>
+<body>
+ <header class="main-header">
+   <nav class="main-navigation">
+     <ul>
+       <li><a>информация</a></li>
+       <li><a>фото и видео</a></li>
+       <li><a>карта штата</a></li>
+       <li><a>гостиницы</a></li>
+     </ul>
+     <a><img src="#"></a>
+   </nav>
+ </header>
+ <img src="#">
+ <main>
+   <section>
+      <p>ИНФРАСТРУКТУРА:</p>
+         <ul>
+           <li><input type="checkbox" checked>БАССЕЙН</li>
+           <li><input type="checkbox">парковка</li>
+           <li><input type="checkbox">wi-fi</li>
+         </ul>
+      <p>тип жилья</p>
+      <ul>
+        <li><input type="checkbox" checked>гостиница</li>
+        <li><input type="checkbox" checked>мотель</li>
+        <li><input type="checkbox" checked>апартаменты</li>
+      </ul>
+      <p>стоимость в сутки (р):</p>
+      <div>
+        <span>от 0</span>
+        <span>до 3000</span>
+      </div>
+      <input type="range" min="0" max="3000">
+      <input type="button" value="показать">
+   </section>
+   <section>
+     <p>найдено: 3</p>
+     <ul title="СОРТИРОВКА:">
+       <li><input type="radio" name="radAnswer1" checked>По цене</li>
+       <li><input type="radio" name="radAnswer1">ПО типу</li>
+       <li><input type="radio" name="radAnswer1">по рейтингу</li>
+     </ul>
+     <div>
+       <ul>
+         <li><input type="radio" name="radAnswer2" title="up-dir"></li>
+         <li><input type="radio" name="radAnswer2" title="down-dir" checked></li>
+       </ul>
+     </div>
+   </section>
+   <section>
+       <div>
+         <img src="#">
+         <h2>Amara Resort & Spa</h2>
+         <span class="hotel-type">Гостиница</span>
+         <span class="price">оТ 4000 Р.</span>
+         <input type="button" class="more-info" value="ПОДРОБНЕЕ">
+         <input type="button" class="reservation" value="ЗАБРОНИРОВАТЬ">
+         <div class="star"></div>
+         <div class="star"></div>
+         <div class="star"></div>
+         <div class="star"></div>
+         <p class="rating">Рейтинг: 8,5</p>
+       </div>
+       <div>
+         <img src="#">
+         <h2>Desert Quail Inn</h2>
+         <span class="hotel-type">Мотель</span>
+         <span class="price">оТ 3000 Р.</span>
+         <input type="button" class="more-info" value="ПОДРОБНЕЕ">
+         <input type="button" class="reservation" value="ЗАБРОНИРОВАТЬ">
+         <div class="star"></div>
+         <div class="star"></div>
+         <div class="star"></div>
+         <p class="rating">Рейтинг: 8,9</p>
+       </div>
+       <div>
+         <img src="#">
+         <h2>Villas at Poco Diablo</h2>
+         <span class="hotel-type">Апартаменты</span>
+         <span class="price">оТ 2000 Р.</span>
+         <input type="button" class="more-info" value="ПОДРОБНЕЕ">
+         <input type="button" class="reservation" value="ЗАБРОНИРОВАТЬ">
+         <div class="star"></div>
+         <div class="star"></div>
+         <p class="rating">Рейтинг: 9,2</p>
+       </div>
+   </section>
+ <footer>
+       <p><strong>#visitSEDONA</strong></p>
+       <ul class="footer-social">
+         <li><a class="social twitter" title="twitter"></a></li>
+         <li><a class="social facebook" title="facebook"></a></li>
+         <li><a class="social youtube" title="youtube"></a></li>
+       </ul>
+       <p>WEBSITE by<img src="#"></p>
+ </footer>
+</body>
+</html>
