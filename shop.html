@@ -23,42 +23,41 @@
     <section>
     </section>
     <form>
-      <h2>Информация:</h2>
+      <span>Информация:</span>
       <ul>
         <li><input type="checkbox" checked>Бассейн</li>
         <li><input type="checkbox">Парковка</li>
         <li><input type="checkbox">Wi-Fi</li>
       </ul>
-      <h2>Тип жилья</h2>
+      <span>Тип жилья:</span>
       <ul>
         <li><input type="checkbox" checked>Гостиница</li>
         <li><input type="checkbox" checked>Мотель</li>
         <li><input type="checkbox" checked>Апартаменты</li>
       </ul>
-      <h2>Стоимость в сутки (р):</h2>
+      <span>Стоимость в сутки (р):</span>
       <div>
         <span>От 0</span>
         <span>До 3000</span>
       </div>
       <input type="range" min="0" max="3000">
-      <button>Показать</button>
+      <button type="submit">Показать</button>
     </form>
     <section>
-      <h3>Найдено: 3</h3>
-      <ul title="Сортировка:">
+      <span>Найдено: 3</span>
+      <span>Сортировка:</span>
+      <ul>
         <li><input type="radio" name="radAnswer1" checked>По цене</li>
         <li><input type="radio" name="radAnswer1">По типу</li>
         <li><input type="radio" name="radAnswer1">По рейтингу</li>
       </ul>
       <div>
-        <ul>
-          <li><input type="radio" name="radAnswer2" title="up-dir"></li>
-          <li><input type="radio" name="radAnswer2" title="down-dir" checked></li>
-        </ul>
+        <input type="radio" name="radAnswer2" title="up-dir">
+        <input type="radio" name="radAnswer2" title="down-dir" checked>
       </div>
     </section>
     <section>
-      <div>
+      <article>
         <img src="#">
         <h2>Amara Resort & Spa</h2>
         <span class="hotel-type">Гостиница</span>
@@ -69,9 +68,9 @@
         <div class="star"></div>
         <div class="star"></div>
         <div class="star"></div>
-        <p class="rating">Рейтинг: 8,5</p>
-      </div>
-      <div>
+        <span>Рейтинг: 8,5</span>
+      </article>
+      <article>
         <img src="#">
         <h2>Desert Quail Inn</h2>
         <span class="hotel-type">Мотель</span>
@@ -81,9 +80,9 @@
         <div class="star"></div>
         <div class="star"></div>
         <div class="star"></div>
-        <p class="rating">Рейтинг: 8,9</p>
-      </div>
-      <div>
+        <span>Рейтинг: 8,9</span>
+      </article>
+      <article>
         <img src="#">
         <h2>Villas at Poco Diablo</h2>
         <span class="hotel-type">Апартаменты</span>
@@ -92,8 +91,8 @@
         <button class="reservation">Забронировать</button>
         <div class="star"></div>
         <div class="star"></div>
-        <p class="rating">Рейтинг: 9,2</p>
-      </div>
+        <span>Рейтинг: 9,2</span>
+      </article>
     </section>
   </main>
   <footer>
