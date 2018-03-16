@@ -49,7 +49,7 @@ body {
   padding-top: 20px;
   display: inline-block;
   background: white;
-  width: 239px;
+  width: 251px;
   height: 36px;
 }
 
@@ -62,9 +62,12 @@ body {
 }
 
 .header-logo {
+    background-color: none;
   display: block;
   padding-top: 20px;
-
+  position:relative;
+  bottom: 20px;
+  right: 10px;
   width: 244px;
   height: 56px;
   background-image: url("../img/header-logo.png");
@@ -72,12 +75,29 @@ body {
   background-position: top;
 }
 
+
+.index {
+    position: relative;
+    left: 500px;
+    bottom: 72px;
+}
+
+
+
+
 .index-title {
   display: block;
   widht: 66%;
   height: 42.62px;
-  text-align: center;
 }
+
+.navigation-item:nth-of-type(3),
+.navigation-item:nth-of-type(4) {
+    position: relative;
+    left: 199px;
+}
+
+
 
 .navigation-link:hover {
   color: #81b3d2;
