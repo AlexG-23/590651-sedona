@@ -3,104 +3,97 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SEDONA</title>
+  <title>Sedona</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
+  <header class="header">
+    <nav class="navigation">
       <ul>
-        <li><a>Информация</a></li>
-        <li><a>Фото и видео</a></li>
-        <li><a>Карта штата</a></li>
-        <li><a href="shop.html">Гостиницы</a></li>
+        <li class="navigation-item"><a class="navigation-link link">Информация</a></li>
+        <li class="navigation-item"><a class="navigation-link link">Фото и видео</a></li>
+        <li class="navigation-item"><a class="navigation-link link">Карта штата</a></li>
+        <li class="navigation-item link"><a class="navigation-link link" href="shop.html">Гостиницы</a></li>
       </ul>
-      <a></a>
+      <a class="navigation-item"><span class="header-logo"></span></a>
     </nav>
   </header>
   <main>
-    <section>
-    </section>
     <section class="about">
-      <strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <strong class="strong index-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
+      <p class="description index-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <section class="advertising">
-      <div>
-        <h2>Настоящий городок</h2>
-        <span>№1</span>
-        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      <div class="">
+        <h2 class="title-white">Настоящий городок</h2>
+        <span class="description-white">№1</span>
+        <p class="description-white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <img src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
-      <div>
-        <h2>Жилье</h2>
-        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </div>
-      <div>
-        <h2>Еда</h2>
-        <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-      </div>
-      <div>
-        <h2>Сувениры</h2>
-        <p>Не только китайского, но и местного производства!</p>
-      </div>
+      <ul class="list-of-services">
+        <li><h2 class="title">Жилье</h2><p class="description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
+        <li><h2 class="title">Еда</h2><p class="description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p></li>
+        <li><h2 class="title">Сувениры</h2><p class="description">Не только китайского, но и местного производства!</p></li>
+      </ul>
       <img src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
       <div>
-        <h2>Там есть Мост дьявола</h2>
-        <span>№2</span>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <h2 class="title-white">Там есть Мост дьявола</h2>
+        <span class="description-white">№2</span>
+        <p class="description-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       <div>
-        <h2>Небольшая площадь</h2>
-        <span>№3</span>
-        <p>Все достопримечательности находятся очень близко</p>
+        <h2 class="title">Небольшая площадь</h2>
+        <span class="description">№3</span>
+        <p class="description">Все достопримечательности находятся очень близко</p>
       </div>
       <div>
-        <h2>Красивая дорога</h2>
-        <span>№4</span>
-        <p>Ехать в сторону Лас-Вегаса совцем не скучно!</p>
+        <h2 class="title">Красивая дорога</h2>
+        <span class="description">№4</span>
+        <p class="description">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
       </div>
       <div>
-        <h2>Мало туристов</h2>
-        <span>№5</span>
-        <p>Большинство едет в гранд каньон и толпится там</p>
+        <h2 class="title">Мало туристов</h2>
+        <span class="description">№5</span>
+        <p class="description">Большинство едет в гранд каньон и толпится там</p>
       </div>
     </section>
     <section class="reservation">
       <strong>Заинтересовались?</strong>
       <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      <button name="search" type="button">Поиск гостиницы в седоне</button>
+      <button class="title-white open-search-form" type="button">Поиск гостиницы в седоне</button>
     </section>
-    <section class="form">
+    <section>
       <form>
-        <div>
+        <div class="form">
           <label for="enter-date">Дата заезда:</label>
-          <input type="date" name="enter-date" id="enter-date" value="2017-04-24">
+          <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
         </div>
-        <div>
+        <div class="form">
           <label for="exit-date">Дата выезда:</label>
-          <input type="date" name="exit-date" id="exit-date" value="2017-07-04">
+          <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
         </div>
-        <div>
+        <div class="form">
           <label for="adults">Взрослые:</label>
-          <input type="number" name="adults" step="1" id="adults" value="2">
+          <input class="form" type="number" name="adults" step="1" id="adults" value="2">
           <label for="children">Дети:</label>
-          <input type="number" name="children" step="1" id="children" value="0">
+          <input class="form" type="number" name="children" step="1" id="children" value="0">
         </div>
-        <button name="find" id="find" type="submit">Найти</button>
+        <button class="title-white search-button" type="submit">Найти</button>
       </form>
     </section>
     <section class="map">
     </section>
   </main>
   <footer>
-    <strong>#visitSEDONA</strong>
+    <strong class="strong">#visitsedona</strong>
     <ul class="footer-social">
-      <li><a class="social twitter" title="twitter"></a></li>
-      <li><a class="social facebook" title="facebook"></a></li>
-      <li><a class="social youtube" title="youtube"></a></li>
+      <li><a class="social social-twitter" title="twitter"></a></li>
+      <li><a class="social social-facebook" title="facebook"></a></li>
+      <li><a class="social social-youtube" title="youtube"></a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+    <a class="description" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
   </footer>
 </body>
 

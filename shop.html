@@ -3,62 +3,64 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SEDONA</title>
+  <title>Sedona</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <ul>
-        <li><a>Информация</a></li>
-        <li><a>Фото и видео</a></li>
-        <li><a>Карта штата</a></li>
-        <li><a>Гостиницы</a></li>
+  <header class="header-shop">
+    <nav>
+      <ul class="navigation">
+        <li class="navigation-item"><a class="navigation-link link">Информация</a></li>
+        <li class="navigation-item"><a class="navigation-link link">Фото и видео</a></li>
+        <li class="navigation-item"><a class="navigation-link link">Карта штата</a></li>
+        <li class="navigation-item link"><a class="navigation-link link">Гостиницы</a></li>
       </ul>
-      <a href="index.html"></a>
+      <a class="navigation-item header-logo" href="index.html"></a>
     </nav>
   </header>
-  <main>
-    <form>
-      <span>Информация:</span>
-      <ul>
-        <li><input type="checkbox" checked>Бассейн</li>
-        <li><input type="checkbox">Парковка</li>
-        <li><input type="checkbox">Wi-Fi</li>
+  <main class="selection-hotel">
+    <form class="selection-form">
+      <span class="selection-criterion">Инфраструктура:</span>
+      <ul class="selection-item infrastructure-selection-checkbox">
+        <li><input class="description-white" type="checkbox" checked>Бассейн</li>
+        <li><input class="description-white" type="checkbox">Парковка</li>
+        <li><input class="description-white" type="checkbox">Wi-Fi</li>
       </ul>
-      <span>Тип жилья:</span>
-      <ul>
-        <li><input type="checkbox" checked>Гостиница</li>
-        <li><input type="checkbox" checked>Мотель</li>
-        <li><input type="checkbox" checked>Апартаменты</li>
+      <span class="selection-criterion">Тип жилья:</span>
+      <ul class="selection-item housing-selection-checkbox">
+        <li><input class="description-white" type="checkbox" checked>Гостиница</li>
+        <li><input class="description-white" type="checkbox" checked>Мотель</li>
+        <li><input class="description-white" type="checkbox" checked>Апартаменты</li>
       </ul>
-      <span>Стоимость в сутки (р):</span>
-      <div>
-        <span>От 0</span>
-        <span>До 3000</span>
+      <span class="selection-criterion">Стоимость в сутки (р):</span>
+      <div class="selection-item diapason-caption">
+        <span class="diapason-from">От 0</span>
+        <span class="diapason-to">До 3000</span>
       </div>
-      <input type="range" min="0" max="3000">
+      <input class="" type="range" min="0" max="3000">
       <button type="submit">Показать</button>
     </form>
-    <section>
+    <section class="result-found">
       <span>Найдено: 3</span>
-      <span>Сортировка:</span>
-      <ul>
-        <li><button type="button">По цене</button></li>
-        <li><button type="button">По типу</button></li>
-        <li><button type="button">По рейтингу</button></li>
+      <span class="sorting">Сортировка:</span>
+      <ul class="sorting-item">
+        <li class="selection-item"><button type="button" >По цене</button></li>
+        <li class="selection-item"><button type="button">По типу</button></li>
+        <li class="selection-item"><button type="button">По рейтингу</button></li>
       </ul>
-      <div>
-        <button type="button" title="up-dir"></button>
-        <button type="button" title="down-dir"></button>
+      <div class="sorting-dir">
+        <button class="sorting-up-dir" type="button" title="up-dir"></button>
+        <button class="sorting-down-dir" type="button" title="down-dir"></button>
       </div>
     </section>
     <section>
       <article>
         <img src="img/hotels-amara-resort-img.jpg" width="135" height="90" alt="Amara Resort &amp; Spa">
         <h2>Amara Resort &amp; Spa</h2>
-        <span class="hotel-type">Гостиница</span>
-        <span class="price">От 4000 Р.</span>
+        <span class="description hotel-type">Гостиница</span>
+        <span class="description price">От 4000 Р.</span>
         <button class="more-info" type="button">Подробнее</button>
         <button class="reservation" type="button">Забронировать</button>
         <div class="star"></div>
@@ -70,8 +72,8 @@
       <article>
         <img src="img/hotels-desert-quail-img.jpg" width="135" height="90" alt="Desert Quail Inn">
         <h2>Desert Quail Inn</h2>
-        <span class="hotel-type">Мотель</span>
-        <span class="price">От 3000 Р.</span>
+        <span class="description hotel-type">Мотель</span>
+        <span class="description price">От 3000 Р.</span>
         <button class="more-info" type="button">Подробнее</button>
         <button class="reservation" type="button">Забронировать</button>
         <div class="star"></div>
@@ -82,8 +84,8 @@
       <article>
         <img src="img/hotels-villas-img.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         <h2>Villas at Poco Diablo</h2>
-        <span class="hotel-type">Апартаменты</span>
-        <span class="price">От 2000 Р.</span>
+        <span class="description hotel-type">Апартаменты</span>
+        <span class="description price">От 2000 Р.</span>
         <button class="more-info" type="button">Подробнее</button>
         <button class="reservation" type="button">Забронировать</button>
         <div class="star"></div>
@@ -93,13 +95,13 @@
     </section>
   </main>
   <footer>
-    <strong>#visitSEDONA</strong>
+    <strong class="strong">#visitsedona</strong>
     <ul class="footer-social">
-      <li><a class="social twitter" title="twitter"></a></li>
-      <li><a class="social facebook" title="facebook"></a></li>
-      <li><a class="social youtube" title="youtube"></a></li>
+      <li><a class="social social-twitter" title="twitter"></a></li>
+      <li><a class="social social-facebook" title="facebook"></a></li>
+      <li><a class="social social-youtube" title="youtube"></a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+    <a class="link description" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
   </footer>
 </body>
 
