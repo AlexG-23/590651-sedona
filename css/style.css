@@ -53,16 +53,12 @@ body {
   height: 36px;
 }
 
-/* .navigation-item:nth-of-type(5) { */
-  background-color: red;
-}
 
 .navigation-link {
   padding-top: 20px;
 }
 
 .header-logo {
-    background-color: none;
   display: block;
   padding-top: 20px;
   position:relative;
@@ -81,9 +77,6 @@ body {
     left: 500px;
     bottom: 72px;
 }
-
-
-
 
 .index-title {
   display: block;
@@ -123,18 +116,18 @@ body {
   display: block;
   width: 1200px;
   height: 800px;
-  background: url("../img/intro.jpg") no-repeat;
+  background: url("../img/intro.jpg");
+  background-repeat: no-repeat;
 }
 
 .header-shop {
-  background-image: url("../img/background photo.jpg");
+  display: block;
+  width: 1200px;
+  height: 800px;
+  background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
+}
 
-}
-header::after {
-  background-image: url("../img/index-background-border.png");
-  background-repeat: no-repeat;
-}
 .form {
   font-size: 14px;
   font-weight: bold;
@@ -156,13 +149,13 @@ header::after {
   color: white;
 }
 
-.description {
+.small-headline {
   font-size: 14px;
   color: black;
   text-decoration: none;
 }
 
-.description-white {
+.small-headline-white {
   color: white;
 }
 
