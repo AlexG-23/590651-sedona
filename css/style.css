@@ -40,60 +40,82 @@ body {
 
 */
 
-.navigation {
-  margin-left: -35px;
-}
 
-.navigation {
+.navigation-menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-content: center;
+
 }
 
 .navigation-item {
+display: block;
   font-size: 14px;
   font-weight: bold;
   color: black;
   text-align: center;
-  padding-top: 20px;
-  display: inline-block;
   background: white;
-  width: 254px;
   height: 36px;
+  list-style: none;
+  margin: auto;
+}
+
+.navigation-item:first-child {
+    order: 1;
+}
+
+.navigation-item:nth-child(2) {
+    order: 2
+}
+
+.navigation-item:nth-child(3) {
+    order: 4;
+}
+
+.navigation-item:nth-child(4) {
+    order: 5;
+}
+
+.navigation-item:nth-child(5) {
+    order: 3;
+}
+
+.navigation-link:hover {
+  color: #81b3d2;
+}
+
+.navigation-link:active {
+  color: #b2b2b2;
 }
 
 .header {
   display: block;
   width: 1200px;
   min-height: 565px;
-  background-image: url(../img/index-background-border.png), url(../img/intro.jpg);
+  background-image: url("../img/index-background-border.png"), url("../img/intro.jpg");
   background-size: auto, auto;
   background-repeat: no-repeat;
   background-position: 50% bottom, 100% top;
 }
 
-.navigation-link {
-  padding-top: 20px;
-}
-
 .header-logo {
   display: block;
   padding-top: 20px;
-  position: relative;
-  bottom: 20px;
+  position: fixed;
   width: 244px;
   height: 56px;
   background-image: url("../img/header-logo.png");
   background-repeat: no-repeat;
   background-position: top;
 }
-
+/*
 .index-link {
   position: relative;
   left: 483px;
   bottom: 72px;
   width: 244px;
   height: 36px;
-}
+} */
 
 /*
 
@@ -245,18 +267,7 @@ body {
   max-width: 550px;
 }
 
-.navigation-item:nth-of-type(3), .navigation-item:nth-of-type(4) {
-  position: relative;
-  left: 199px;
-}
 
-.navigation-link:hover {
-  color: #81b3d2;
-}
-
-.navigation-link:active {
-  color: #b2b2b2;
-}
 
 .link:visited {
   color: inherit;
@@ -435,7 +446,7 @@ body {
   background-color: #f2f2f2;
   border: none;
   padding-left: 10px;
-  font-weight: bold;  
+  font-weight: bold; 
   cursor: pointer;
   /* background-image: url("../img/calendar.svg"); */
   /* background-repeat: no-repeat; */
@@ -466,10 +477,10 @@ body {
   border: 1px solid #e5e5e5;
 }
 
-.volume {  
-  display: block;  
-  width: 38px;  
-  height: 38px;  
+.volume { 
+  display: block; 
+  width: 38px; 
+  height: 38px; 
   background-color: #f2f2f2;
 }
 
