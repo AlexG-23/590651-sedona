@@ -26,13 +26,10 @@
   font-style: normal;
 }
 
-html {
-}
 
 body {
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
-  margin-top: -16px;
 }
 
 /*
@@ -49,12 +46,10 @@ body {
 
 .navigation {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
-  margin-left: -5px;
   font-size: 14px;
   font-weight: bold;
   color: black;
@@ -471,8 +466,15 @@ body {
   border: 1px solid #e5e5e5;
 }
 
+.volume {  
+  display: block;  
+  width: 38px;  
+  height: 38px;  
+  background-color: #f2f2f2;
+}
+
 .adults, .children {
-  width: 114px;
+  width: 38px;
   height: 38px;
   background-color: #f2f2f2;
   text-align: center;
@@ -482,8 +484,6 @@ body {
   outline: none;
 }
 
-
-
 .map {
   background-image: url("../img/index-map.jpg");
   background-repeat: no-repeat;
@@ -491,7 +491,6 @@ body {
   height: 590px;
   position: relative;
   bottom: 512px;
-
 }
 
 /*
