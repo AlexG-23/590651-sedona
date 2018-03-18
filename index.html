@@ -18,74 +18,89 @@
         <li class="navigation-item"><a class="navigation-link link">Карта штата</a></li>
         <li class="navigation-item link"><a class="navigation-link link" href="shop.html">Гостиницы</a></li>
       </ul>
-      <a class="navigation-item index"><span class="header-logo"></span></a>
+      <a class="navigation-item index-link"><span class="header-logo"></span></a>
     </nav>
   </header>
 
   <main>
     <section class="about">
       <strong class="strong index-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-      <p class="small-headline index-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <p class="second-line index-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <section class="advertising">
-      <div class="">
+      <div class="town">
         <h2 class="title-white">Настоящий городок</h2>
         <span class="small-headline-white number">№1</span>
         <p class="small-headline-white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
+      <img class="town-image" src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
       <ul class="list-of-services">
-        <li><h2 class="title house-icon">Жилье</h2><p class="small-headline">Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
-        <li><h2 class="title burger-icon">Еда</h2><p class="small-headline">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p></li>
-        <li><h2 class="title gift-icon">Сувениры</h2><p class="small-headline">Не только китайского, но и местного производства!</p></li>
+        <li class="service-item">
+          <span class="house-icon"></span>
+          <h2 class="title">Жилье</h2>
+          <p class="small-headline item-title">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li class="service-item">
+          <span class="burger-icon">.</span>
+          <h2 class="title">Еда</h2>
+          <p class="small-headline item-title">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+        </li>
+        <li class="service-item">
+          <span class="gift-icon">.</span>
+          <h2 class="title gift-icon">Сувениры</h2>
+          <p class="small-headline item-title">Не только китайского, но и местного производства!</p>
+        </li>
       </ul>
-      <img src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
-      <div>
+      <img class="devil-image" src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+      <div class="devil">
         <h2 class="title-white">Там есть Мост дьявола</h2>
         <span class="small-headline-white number">№2</span>
         <p class="small-headline-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-      <div>
+      <article class="list-of-services advantages">
+      <div class="service-item">
         <h2 class="title">Небольшая площадь</h2>
         <span class="small-headline number">№3</span>
         <p class="small-headline">Все достопримечательности находятся очень близко</p>
       </div>
-      <div>
+      <div class="service-item">
         <h2 class="title">Красивая дорога</h2>
         <span class="small-headline number">№4</span>
         <p class="small-headline">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
       </div>
-      <div>
+      <div class="service-item">
         <h2 class="title">Мало туристов</h2>
         <span class="small-headline number">№5</span>
         <p class="small-headline">Большинство едет в гранд каньон и толпится там</p>
       </div>
+    </article>
     </section>
     <section class="reservation">
-      <strong>Заинтересовались?</strong>
-      <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      <strong class="big-strong">Заинтересовались?</strong>
+      <p class="invite-to-form">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+      <button class="title-white form-btn" type="button">Поиск гостиницы в седоне</button>
     </section>
-    <section class="searching-form">
-      <button class="title-white open-search-form" type="button">Поиск гостиницы в седоне</button>
-      <form class="">
-        <div class="form">
-          <label for="enter-date">Дата заезда:</label>
-          <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
-        </div>
-        <div class="form">
-          <label for="exit-date">Дата выезда:</label>
-          <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
-        </div>
-        <div class="form">
-          <label for="adults">Взрослые:</label>
-          <input class="form adults" type="number" name="adults" step="1" id="adults" value="2">
-          <label for="children">Дети:</label>
-          <input class="form children" type="number" name="children" step="1" id="children" value="0">
-        </div>
-        <button class="title-white search-button" type="submit">Найти</button>
-      </form>
-    </section>
+
     <section class="map">
+      <section class="searching-form">
+        <form class="">
+          <div class="form">
+            <label for="enter-date">Дата заезда:</label>
+            <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
+          </div>
+          <div class="form">
+            <label for="exit-date">Дата выезда:</label>
+            <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
+          </div>
+          <div class="form">
+            <label for="adults">Взрослые:</label>
+            <input class="form adults" type="number" name="adults" step="1" id="adults" value="2">
+            <label for="children">Дети:</label>
+            <input class="form children" type="number" name="children" step="1" id="children" value="0">
+          </div>
+          <button class="title-white search-button" type="submit">Найти</button>
+        </form>
+      </section>
     </section>
   </main>
   <footer class="footer">
