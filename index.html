@@ -31,7 +31,7 @@
       <div class="town">
         <h2 class="title-white">Настоящий городок</h2>
         <span class="small-headline-white number">№1</span>
-        <p class="small-headline-white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <p class="small-headline-white attraction">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <img class="town-image" src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
       <ul class="list-of-services">
@@ -41,13 +41,13 @@
           <p class="small-headline item-title">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li class="service-item">
-          <span class="burger-icon">.</span>
+          <span class="burger-icon"></span>
           <h2 class="title">Еда</h2>
           <p class="small-headline item-title">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
         </li>
         <li class="service-item">
-          <span class="gift-icon">.</span>
-          <h2 class="title gift-icon">Сувениры</h2>
+          <span class="gift-icon"></span>
+          <h2 class="title">Сувениры</h2>
           <p class="small-headline item-title">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
@@ -58,22 +58,22 @@
         <p class="small-headline-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       <article class="list-of-services advantages">
-      <div class="service-item">
-        <h2 class="title">Небольшая площадь</h2>
-        <span class="small-headline number">№3</span>
-        <p class="small-headline">Все достопримечательности находятся очень близко</p>
-      </div>
-      <div class="service-item">
-        <h2 class="title">Красивая дорога</h2>
-        <span class="small-headline number">№4</span>
-        <p class="small-headline">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
-      </div>
-      <div class="service-item">
-        <h2 class="title">Мало туристов</h2>
-        <span class="small-headline number">№5</span>
-        <p class="small-headline">Большинство едет в гранд каньон и толпится там</p>
-      </div>
-    </article>
+        <div class="service-item">
+          <h2 class="title">Небольшая площадь</h2>
+          <span class="small-headline number">№3</span>
+          <p class="small-headline">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="service-item">
+          <h2 class="title">Красивая дорога</h2>
+          <span class="small-headline number">№4</span>
+          <p class="small-headline">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="service-item">
+          <h2 class="title">Мало туристов</h2>
+          <span class="small-headline number">№5</span>
+          <p class="small-headline">Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </article>
     </section>
     <section class="reservation">
       <strong class="big-strong">Заинтересовались?</strong>
@@ -94,9 +94,9 @@
           </div>
           <div class="form">
             <label for="adults">Взрослые:</label>
-            <input class="form adults" type="number" name="adults" step="1" id="adults" value="2">
+            <input class="form adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
             <label for="children">Дети:</label>
-            <input class="form children" type="number" name="children" step="1" id="children" value="0">
+            <input class="form children" type="number" name="children" step="1" id="children" min="0" value="0">
           </div>
           <button class="title-white search-button" type="submit">Найти</button>
         </form>
@@ -110,7 +110,7 @@
       <li><a class="social-item social-facebook" title="facebook"></a></li>
       <li><a class="social-item social-youtube" title="youtube"></a></li>
     </ul>
-    <a class="small-headline" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
+    <a class="small-headline website" href="https://htmlacademy.ru/intensive/htmlcss">Website by<span class="website"></span></a>
   </footer>
 </body>
 
