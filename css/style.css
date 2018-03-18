@@ -26,7 +26,8 @@
   font-style: normal;
 }
 
-html {}
+html {
+}
 
 body {
   text-transform: uppercase;
@@ -577,6 +578,7 @@ body {
     width: 115px;
     height: 41px;
 }
+
 
 .checkbox {
   background-image: url("../img/checkbox-off.svg");
