@@ -11,14 +11,14 @@
 <body>
 
   <header class="header">
-    <nav class="nav-menu">
+    <nav>
       <ul class="navigation">
-        <li class="navigation-item"><a class="navigation-link link">Информация</a></li>
-        <li class="navigation-item"><a class="navigation-link link">Фото и видео</a></li>
-        <li class="navigation-item"><a class="navigation-link link">Карта штата</a></li>
-        <li class="navigation-item link"><a class="navigation-link link" href="shop.html">Гостиницы</a></li>
+        <li class="navigation-item link"><a class="link">Информация</a></li>
+        <li class="navigation-item link"><a class="link">Фото и видео</a></li>
+        <li class="navigation-item link"><a class="link header-logo"></a>
+        <li class="navigation-item link"><a class="link">Карта штата</a></li>
+        <li class="navigation-item link"><a class="link" href="shop.html">Гостиницы</a></li>
       </ul>
-      <a class="navigation-item index-link"><span class="header-logo"></span></a>
     </nav>
   </header>
 
@@ -34,29 +34,31 @@
         <p class="small-headline-white attraction">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <img class="town-image" src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
-        <div class="service-item">
+      <ul class="list-of-services">
+        <li class="service-item">
           <span class="house-icon"></span>
           <h2 class="title">Жилье</h2>
           <p class="small-headline item-title">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </div>
-        <div class="service-item">
+        </li>
+        <li class="service-item">
           <span class="burger-icon"></span>
           <h2 class="title">Еда</h2>
           <p class="small-headline item-title">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-      </div>
-        <div class="service-item">
+        </li>
+        <li class="service-item">
           <span class="gift-icon"></span>
           <h2 class="title">Сувениры</h2>
           <p class="small-headline item-title">Не только китайского, но и местного производства!</p>
         </li>
-    </div>
+      </ul>
       <img class="devil-image" src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
       <div class="devil">
         <h2 class="title-white">Там есть Мост дьявола</h2>
         <span class="small-headline-white number">№2</span>
         <p class="small-headline-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-      <div class="service-item">
+      <article class="list-of-services advantages">
+        <div class="service-item">
           <h2 class="title">Небольшая площадь</h2>
           <span class="small-headline number">№3</span>
           <p class="small-headline">Все достопримечательности находятся очень близко</p>
@@ -71,6 +73,7 @@
           <span class="small-headline number">№5</span>
           <p class="small-headline">Большинство едет в гранд каньон и толпится там</p>
         </div>
+      </article>
     </section>
     <section class="reservation">
       <strong class="big-strong">Заинтересовались?</strong>
@@ -89,17 +92,11 @@
             <label for="exit-date">Дата выезда:</label>
             <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
           </div>
-          <div class="nmb">
+          <div class="form">
             <label for="adults">Взрослые:</label>
-            <button class="nmb-btn" type="button">-</button>
             <input class="form adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
-            <button class="nmb-btn" type="button">+</button>
-        </div>
-        <div class="nmb">
             <label for="children">Дети:</label>
-            <button class="nmb-btn" type="button">-</button>
             <input class="form children" type="number" name="children" step="1" id="children" min="0" value="0">
-            <button class="nmb-btn" type="button">+</button>
           </div>
           <button class="title-white search-button" type="submit">Найти</button>
         </form>
