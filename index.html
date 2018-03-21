@@ -13,11 +13,11 @@
   <header class="header">
     <nav>
       <ul class="navigation">
-        <li class="navigation-item link"><a class="link">Информация</a></li>
-        <li class="navigation-item link"><a class="link">Фото и видео</a></li>
-        <li class="navigation-item link"><a class="link header-logo"></a>
-        <li class="navigation-item link"><a class="link">Карта штата</a></li>
-        <li class="navigation-item link"><a class="link" href="shop.html">Гостиницы</a></li>
+        <li class="nav-item"><a class="link">Информация</a></li>
+        <li class="nav-item"><a class="link">Фото и видео</a></li>
+        <li class="nav-item"><a class="header-logo"></a></li>
+        <li class="nav-item"><a class="link">Карта штата</a></li>
+        <li class="nav-item"><a class="link" href="shop.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -82,25 +82,27 @@
     </section>
 
     <section class="map">
-      <section class="searching-form">
-        <form class="">
-          <div class="form">
+        <form class="searching-form form">
+          <div>
             <label for="enter-date">Дата заезда:</label>
             <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
           </div>
-          <div class="form">
+          <div>
             <label for="exit-date">Дата выезда:</label>
             <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
           </div>
-          <div class="form">
+          <div>
             <label for="adults">Взрослые:</label>
+            <button class="volume">-</button>
             <input class="form adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
+            <button class="volume">+</button>
             <label for="children">Дети:</label>
+            <button class="volume">-</button>
             <input class="form children" type="number" name="children" step="1" id="children" min="0" value="0">
+            <button class="volume">+</button>
           </div>
           <button class="title-white search-button" type="submit">Найти</button>
         </form>
-      </section>
     </section>
   </main>
   <footer class="footer">

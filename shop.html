@@ -10,30 +10,37 @@
 
 <body>
 
-  <header class="header-shop">
-    <nav class="">
+  <header class="header">
+    <nav>
       <ul class="navigation">
-        <li class="navigation-item link"><a class="link">Информация</a></li>
-        <li class="navigation-item link"><a class="link">Фото и видео</a></li>
-        <li class="navigation-item link"><a class="link header-logo" href="index.html"></a>
-        <li class="navigation-item link"><a class="link">Карта штата</a></li>
-        <li class="navigation-item link"><a class="link">Гостиницы</a></li>
+        <li class="nav-item"><a class="link">Информация</a></li>
+        <li class="nav-item"><a class="link">Фото и видео</a></li>
+        <li class="nav-item"><a class="link header-logo" href="index.html"></a></li>
+        <li class="nav-item"><a class="link">Карта штата</a></li>
+        <li class="nav-item"><a class="link">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
+
   <main class="selection-hotel">
     <form class="selection-form">
       <span class="selection-criterion">Инфраструктура:</span>
       <ul class="selection-item infrastructure-selection-checkbox">
-        <li><input class="small-headline-white checkbox-checked" type="checkbox" checked>Бассейн</li>
-        <li><input class="small-headline-white checkbox" type="checkbox">Парковка</li>
-        <li><input class="small-headline-white checkbox" type="checkbox">Wi-Fi</li>
+        <label for="pool">Бассейн</label>
+        <li><input id="pool" class="small-headline-white checkbox-checked" type="checkbox" checked></li>
+        <label for="parking">Парковка</label>
+        <li><input id="parking" class="small-headline-white checkbox" type="checkbox"></li>
+        <label for="wi-fi">Wi-Fi</label>
+        <li><input id="wi-fi" class="small-headline-white checkbox" type="checkbox"></li>
       </ul>
       <span class="selection-criterion">Тип жилья:</span>
       <ul class="selection-item housing-selection-checkbox">
-        <li><input class="small-headline-white checkbox-checked" type="checkbox" checked>Гостиница</li>
-        <li><input class="small-headline-white checkbox-checked" type="checkbox" checked>Мотель</li>
-        <li><input class="small-headline-white checkbox-checked" type="checkbox" checked>Апартаменты</li>
+        <label for="hotel">Гостиница</label>
+        <li><input id="hotel" class="small-headline-white checkbox-checked" type="checkbox" checked></li>
+        <label for="motel">Мотель</label>
+        <li><input id="motel" class="small-headline-white checkbox-checked" type="checkbox" checked></li>
+        <label for="apartments">Апартаменты</label>
+        <li><input id="apartments" class="small-headline-white checkbox-checked" type="checkbox" checked></li>
       </ul>
       <span class="selection-criterion">Стоимость в сутки (р):</span>
       <div class="selection-item diapason-caption">
