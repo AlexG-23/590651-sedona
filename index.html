@@ -8,22 +8,20 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
+<body class="container">
   <header class="header">
-    <nav>
-      <ul class="navigation">
+    <nav class="navigation">
+      <ul class="navigation-list">
         <li class="nav-item"><a class="link">Информация</a></li>
         <li class="nav-item"><a class="link">Фото и видео</a></li>
-        <li class="nav-item"><a class="header-logo"></a></li>
         <li class="nav-item"><a class="link">Карта штата</a></li>
         <li class="nav-item"><a class="link" href="shop.html">Гостиницы</a></li>
       </ul>
+      <a class="link header-logo"></a>
     </nav>
   </header>
-
   <main>
-    <section class="about">
+    <section class="what-is-sedona">
       <strong class="strong index-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
       <p class="second-line index-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
@@ -81,28 +79,34 @@
       <button class="title-white form-btn" type="button">Поиск гостиницы в седоне</button>
     </section>
 
-    <section class="map">
-        <form class="searching-form form">
-          <div>
+    <section class="reservation-form">
+      <form class="searching-form">
+        <div class="class">
+          <div class="form-element">
             <label for="enter-date">Дата заезда:</label>
             <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
           </div>
-          <div>
+          <div class="form-element">
             <label for="exit-date">Дата выезда:</label>
             <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
           </div>
-          <div>
-            <label for="adults">Взрослые:</label>
-            <button class="volume">-</button>
-            <input class="form adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
-            <button class="volume">+</button>
-            <label for="children">Дети:</label>
-            <button class="volume">-</button>
-            <input class="form children" type="number" name="children" step="1" id="children" min="0" value="0">
-            <button class="volume">+</button>
+          <div class="form-elements">
+            <div class="form-element adults-nmb">
+              <label for="adults">Взрослые:</label>
+              <button class="volume">-</button>
+              <input class="form-element adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
+              <button class="volume">+</button>
+            </div>
+            <div class="children-nmb">
+              <label for="children">Дети:</label>
+              <button class="volume">-</button>
+              <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
+              <button class="volume">+</button>
+            </div>
           </div>
-          <button class="title-white search-button" type="submit">Найти</button>
-        </form>
+        </div>
+        <button class="title-white search-button" type="submit">Найти</button>
+      </form>
     </section>
   </main>
   <footer class="footer">
@@ -112,7 +116,10 @@
       <li><a class="social-item social-facebook" title="facebook"></a></li>
       <li><a class="social-item social-youtube" title="youtube"></a></li>
     </ul>
-    <a class="small-headline website" href="https://htmlacademy.ru/intensive/htmlcss">Website by<span class="website"></span></a>
+    <div class="final">
+      <span class="creater">Website by</span>
+      <a class="small-headline website" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+    </div>
   </footer>
 </body>
 
