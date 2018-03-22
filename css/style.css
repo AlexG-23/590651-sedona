@@ -336,7 +336,7 @@ body {
   margin: 0 auto;
   background-color: white;
   width: 568px;
-  min-height: 395px;
+  max-height: 395px;
   align-items: center;
   justify-content: center;
 }
@@ -344,6 +344,7 @@ body {
 .class {
   display: flex;
   flex-direction: column;
+  padding: 55px;
 }
 
 .form-elements {
@@ -354,6 +355,10 @@ body {
 .form-element {
   display: flex;
   justify-content: space-between;
+}
+
+.change-quantity {
+  display: flex;
 }
 
 .search-button {
@@ -424,10 +429,7 @@ body {
   outline: none;
 }
 
-.children-nmb,
-.adults-nmb {
-  display: flex;
-}
+
 
 .reservation-form {
   position: relative;

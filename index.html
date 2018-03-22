@@ -91,23 +91,28 @@
             <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
           </div>
           <div class="form-elements">
-            <div class="form-element adults-nmb">
+            <div class="form-element">
               <label for="adults">Взрослые:</label>
-              <button class="volume">-</button>
-              <input class="form-element adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
-              <button class="volume">+</button>
+              <div class="change-quantity">
+                <button class="volume">-</button>
+                <input class="adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
+                <button class="volume">+</button>
+              </div>
             </div>
-            <div class="children-nmb">
+            <div class="form-element">
               <label for="children">Дети:</label>
-              <button class="volume">-</button>
-              <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
-              <button class="volume">+</button>
+              <div class="change-quantity">
+                <button class="volume">-</button>
+                <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
+                <button class="volume">+</button>
+              </div>
             </div>
           </div>
+          <button class="title-white search-button" type="submit">Найти</button>
         </div>
-        <button class="title-white search-button" type="submit">Найти</button>
       </form>
     </section>
+
   </main>
   <footer class="footer">
     <strong class="strong visitsedona">#visitsedona</strong>
