@@ -619,7 +619,6 @@ body {
 .infrastructure-selection-checkbox {
   display: flex;
   flex-direction: column;
-  justify-content:;
 }
 
 .result-found {
