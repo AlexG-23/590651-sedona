@@ -789,6 +789,14 @@ body {
   height: 10px;
 }
 
+.sorting-up-dir:hover {
+  background-image: url("../img/icon-up-dir-hover.png");
+}
+
+.sorting-up-dir:active {
+  background-image: url("../img/icon-up-dir-active.png");
+}
+
 .sorting-down-dir {
   background-image: url("../img/icon-down-dir.png");
   background-repeat: no-repeat;
@@ -797,6 +805,13 @@ body {
   height: 10px;
 }
 
+.sorting-down-dir:hover {
+  background-image: url("../img/icon-down-dir-hover.png");
+}
+
+.sorting-down-dir:active {
+  background-image: url("../img/icon-down-dir-active.png");
+}
 
 .footer-shop {
   display: flex;
