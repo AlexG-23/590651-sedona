@@ -23,93 +23,85 @@
   <main>
     <section class="what-is-sedona">
       <strong class="strong index-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-      <p class="second-line index-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <p class="index-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
     <section class="advertising">
-      <div class="town">
+      <div class="card">
         <h2 class="title-white">Настоящий городок</h2>
         <span class="small-headline-white number">№1</span>
         <p class="small-headline-white attraction">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img class="town-image" src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
-      <ul class="list-of-services">
-        <li class="service-item">
-          <span class="house-icon"></span>
-          <h2 class="title">Жилье</h2>
-          <p class="small-headline item-title">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="service-item">
-          <span class="burger-icon"></span>
-          <h2 class="title">Еда</h2>
-          <p class="small-headline item-title">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
-        </li>
-        <li class="service-item">
-          <span class="gift-icon"></span>
-          <h2 class="title">Сувениры</h2>
-          <p class="small-headline item-title">Не только китайского, но и местного производства!</p>
-        </li>
-      </ul>
-      <img class="devil-image" src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
-      <div class="devil">
+      <img class="illustration" src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
+      <div class="card">
+        <span class="house icon"></span>
+        <h2 class="title">Жилье</h2>
+        <p class="small-headline">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </div>
+      <div class="card">
+        <span class="burger icon"></span>
+        <h2 class="title">Еда</h2>
+        <p class="small-headline">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+      </div>
+      <div class="card">
+        <span class="gift icon"></span>
+        <h2 class="title">Сувениры</h2>
+        <p class="small-headline">Не только китайского, но и местного производства!</p>
+      </div>
+      <img class="illustration" src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+      <div class="card">
         <h2 class="title-white">Там есть Мост дьявола</h2>
         <span class="small-headline-white number">№2</span>
         <p class="small-headline-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-      <article class="list-of-services advantages">
-        <div class="service-item">
-          <h2 class="title">Небольшая площадь</h2>
-          <span class="small-headline number">№3</span>
-          <p class="small-headline">Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class="service-item">
-          <h2 class="title">Красивая дорога</h2>
-          <span class="small-headline number">№4</span>
-          <p class="small-headline">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="service-item">
-          <h2 class="title">Мало туристов</h2>
-          <span class="small-headline number">№5</span>
-          <p class="small-headline">Большинство едет в гранд каньон и толпится там</p>
-        </div>
-      </article>
+      <div class="card">
+        <h2 class="reason">Небольшая площадь</h2>
+        <span class="numbers number">№3</span>
+        <p class="small-headline">Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="card">
+        <h2 class="reason">Красивая дорога</h2>
+        <span class="numbers number">№4</span>
+        <p class="small-headline">Ехать в сторону Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="card">
+        <h2 class="reason">Мало туристов</h2>
+        <span class="numbers number">№5</span>
+        <p class="small-headline">Большинство едет в гранд каньон и толпится там</p>
+      </div>
     </section>
     <section class="reservation">
-      <strong class="big-strong">Заинтересовались?</strong>
+      <strong class="question">Заинтересовались?</strong>
       <p class="invite-to-form">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       <button class="title-white form-btn" type="button">Поиск гостиницы в седоне</button>
     </section>
 
     <section class="reservation-form">
       <form class="searching-form">
-        <div class="class">
           <div class="form-element">
-            <label for="enter-date">Дата заезда:</label>
+            <label class="label" for="enter-date">Дата заезда:</label>
             <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
           </div>
           <div class="form-element">
-            <label for="exit-date">Дата выезда:</label>
+            <label class="label" for="exit-date">Дата выезда:</label>
             <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
           </div>
-          <div class="form-elements">
-            <div class="form-element-quantity">
-              <label for="adults">Взрослые:</label>
-              <div class="change-quantity">
-                <button class="volume">-</button>
-                <input class="adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
-                <button class="volume">+</button>
-              </div>
-            </div>
-            <div class="form-element-quantity">
-              <label for="children">Дети:</label>
-              <div class="change-quantity">
-                <button class="volume">-</button>
-                <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
-                <button class="volume">+</button>
-              </div>
+          <div class="form-element">
+            <label class="label" for="adults">Взрослые:</label>
+            <div class="change-quantity-adults">
+              <button class="volume">-</button>
+              <input class="adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
+              <button class="volume">+</button>
             </div>
           </div>
-          <button class="title-white search-button" type="submit">Найти</button>
-        </div>
+          <div class="form-element">
+            <label class="label" for="children">Дети:</label>
+            <div class="change-quantity-children">
+              <button class="volume">-</button>
+              <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
+              <button class="volume">+</button>
+            </div>
+          </div>
+        <button class="title-white search-button" type="submit">Найти</button>
       </form>
     </section>
 
@@ -123,7 +115,7 @@
     </ul>
     <div class="final">
       <span class="creater">Website by</span>
-      <a class="small-headline website" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      <a class="website" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </div>
   </footer>
 </body>
