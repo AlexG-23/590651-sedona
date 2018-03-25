@@ -27,9 +27,9 @@
     </section>
     <section class="advertising">
       <div class="card">
-        <h2 class="title-white">Настоящий городок</h2>
-        <span class="small-headline-white number">№1</span>
-        <p class="small-headline-white attraction">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <h2 class="title-white ">Настоящий городок</h2>
+        <span class="small-headline-white number-white">№1</span>
+        <p class="small-headline-white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <img class="illustration" src="img/index-real-town.jpg" width="800" height="256" alt="Настоящий городок">
       <div class="card">
@@ -50,7 +50,7 @@
       <img class="illustration" src="img/index-devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
       <div class="card">
         <h2 class="title-white">Там есть Мост дьявола</h2>
-        <span class="small-headline-white number">№2</span>
+        <span class="small-headline-white number-white">№2</span>
         <p class="small-headline-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
       <div class="card">
@@ -72,11 +72,12 @@
     <section class="reservation">
       <strong class="question">Заинтересовались?</strong>
       <p class="invite-to-form">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      <button class="title-white form-btn" type="button">Поиск гостиницы в седоне</button>
+      <button class="form-btn" type="button">Поиск гостиницы в седоне</button>
     </section>
 
     <section class="reservation-form">
       <form class="searching-form">
+        <div class="form-container">
           <div class="form-element">
             <label class="label" for="enter-date">Дата заезда:</label>
             <input class="date-form" type="text" name="enter-date" id="enter-date" value="24 апреля 2017">
@@ -85,23 +86,26 @@
             <label class="label" for="exit-date">Дата выезда:</label>
             <input class="date-form" type="text" name="exit-date" id="exit-date" value="4 июля 2017">
           </div>
-          <div class="form-element">
-            <label class="label" for="adults">Взрослые:</label>
-            <div class="change-quantity-adults">
-              <button class="volume">-</button>
-              <input class="adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
-              <button class="volume">+</button>
+          <div class="visitors">
+            <div class="form-element">
+              <label class="label" for="adults">Взрослые:</label>
+              <div class="change-quantity-adults">
+                <button class="volume">-</button>
+                <input class="adults" type="number" name="adults" step="1" id="adults" min="0" value="2">
+                <button class="volume">+</button>
+              </div>
+            </div>
+            <div class="form-element">
+              <label class="label" for="children">Дети:</label>
+              <div class="change-quantity-children">
+                <button class="volume">-</button>
+                <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
+                <button class="volume">+</button>
+              </div>
             </div>
           </div>
-          <div class="form-element">
-            <label class="label" for="children">Дети:</label>
-            <div class="change-quantity-children">
-              <button class="volume">-</button>
-              <input class="children" type="number" name="children" step="1" id="children" min="0" value="0">
-              <button class="volume">+</button>
-            </div>
-          </div>
-        <button class="title-white search-button" type="submit">Найти</button>
+          <button class="search-button" type="submit">Найти</button>
+        </div>
       </form>
     </section>
 
