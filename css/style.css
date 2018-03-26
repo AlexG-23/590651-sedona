@@ -70,8 +70,8 @@ body {
 }
 
 .nav-item {
-  width: 240px;
-  line-height: 56px;
+  line-height: 21px;
+  padding: 16px 60px;
   font-weight: bold;
   text-align: center;
   background: white;
@@ -111,6 +111,7 @@ body {
 }
 
 .advertising {
+  /* Указал такую ширину, потому что без нее остается свободное место*/
   width: 101%;
   display: flex;
   flex-wrap: wrap;
@@ -585,10 +586,14 @@ body {
   flex-wrap: nowrap;
 }
 
+.diapason {
+  margin: 5px auto;
+}
+
 .diapason:first-child::after {
   content: "|";
   font-size: 22px;
-  padding: 0 58px;
+  padding: 0 50px 0 60px;
 }
 
 .diapason-caption {
@@ -602,13 +607,17 @@ body {
   color: white;
 }
 
+.price {
+  margin: 12px 0;
+}
+
 .price-range {
   display: flex;
   align-items: center;
   border: 2px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
-  padding: 0 58px;
+  padding: 0 50px 0 70px;
 }
 
 .range {
@@ -616,11 +625,12 @@ body {
 }
 
 .submit-button {
+  text-transform: uppercase;
   color: white;
   border: 2px solid #ffffff;
   border-radius: 5px;
-  width: 133px;
-  height: 32px;
+  margin-top: 15px;
+  padding: 7px 35px;
   background-color: transparent;
 }
 
@@ -638,7 +648,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 75px;
+  padding: 18px 100px;
   border-bottom: 1px solid #e2e2e2;
 }
 
@@ -684,6 +694,10 @@ body {
   flex-direction: column;
 }
 
+.hotel-image {
+  align-self: center;
+}
+
 .innery-item {
   display: flex;
 }
@@ -699,9 +713,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 150px;
   border-bottom: 1px solid #e2e2e2;
-  padding: 0 75px;
+  padding: 30px 100px;
 }
 
 .found-item:first-child {
@@ -728,6 +741,15 @@ body {
 .parameters {
   display: flex;
   flex-direction: column;
+  margin: auto 30px;
+}
+
+.hotel-type {
+  padding-right: 20px;
+}
+
+.hotel-name {
+  margin: 0;
 }
 
 .hotel-name:hover {
@@ -766,6 +788,7 @@ body {
 
 .stars {
   display: flex;
+  margin-bottom: 45px;
 }
 
 .star {
@@ -776,6 +799,11 @@ body {
   height: 17px;
 }
 
+.grade {
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 3px 15px;
+}
 
 .footer-shop {
   display: flex;
