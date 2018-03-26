@@ -722,6 +722,7 @@ body {
 }
 
 .more-info {
+  margin-right: 5px;
   font-weight: bold;
   background-color: #81b3d2;
   border: none;
