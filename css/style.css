@@ -296,14 +296,14 @@ body {
 
 .searching-form {
   display: inline-block;
+  box-sizing: border-box;
+  width: 568px;
   line-height: 26px;
   font-weight: bold;
   background-color: #ffffff;
   position: absolute;
   left: 316px;
   padding: 54px;
-  width: 568px;
-  box-sizing: border-box;
 }
 
 .form-container {
