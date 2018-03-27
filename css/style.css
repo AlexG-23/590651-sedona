@@ -823,7 +823,6 @@ body {
 }
 
 .grade {
-  display: inline-block;
   background-color: #f2f2f2;
   padding: 3px 15px;
 }
