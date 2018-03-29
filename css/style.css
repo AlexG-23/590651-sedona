@@ -50,8 +50,7 @@ body {
 
 /**********************
 
-
-         HEADER
+HEADER
 
 *********************/
 
@@ -72,11 +71,10 @@ body {
 }
 
 .nav-item {
-    line-height: 21px;
-    font-weight: bold;
-    text-align: center;
-    background: white;
-    width: 240px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  width: 240px;
 }
 
 .nav-item:nth-child(2) {
@@ -110,7 +108,7 @@ body {
   color: #b2b2b2;
 }
 
-.on-page {
+.active-page {
   color: #766357;
 }
 
@@ -127,14 +125,13 @@ body {
 
 /***********************
 
-         MAIN
+MAIN
 
 ***************************/
 
 .what-is-sedona {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   padding: 60px 0;
 }
 
@@ -144,67 +141,54 @@ body {
   font-weight: bold;
 }
 
-.index-title {
-  display: block;
+.index-title, .paragraph {
+  padding: 0px 350px;
   text-align: center;
 }
 
+.paragraph {
+  color: #696969;
+}
+
 .advertising {
-  /* Указал такую ширину, потому что без нее остается свободное место*/
-  width: 101%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .card {
-  width: 33%;
+  width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  padding: 40px 0;
   text-align: center;
 }
 
-.card:nth-of-type(1), .card:nth-of-type(5) {
+.blue-card {
   background-color: #81b3d2;
-  padding: 50px 0;
-
+  color: #ffffff;
 }
 
-.card:nth-of-type(6), .card:nth-of-type(7), .card:nth-of-type(8) {
+.gray-card {
   background-color: #eeeeee;
 }
 
-.title-white {
-  text-transform: uppercase;
+.feature-card-title {
   line-height: 26px;
   font-weight: bold;
-  color: white;
 }
 
-.small-headline {
-  padding: 5px 70px 45px;
-}
-
-.small-headline-white {
-  color: #ffffff;
-  padding: 0px 50px;
-}
-
-.number-white {
-  color: #ffffff;
-}
-
-.illustration {
-  width: 66%;
+.card-description {
+  padding: 4px 70px;
 }
 
 .title {
   margin: 30px 0;
 }
 
-.icon {
-  margin-top: 60px;
+.feature-card-icon {
+  margin-top: 15px;
   background-repeat: no-repeat;
   width: 75px;
   height: 75px;
@@ -222,25 +206,22 @@ body {
   background-image: url("../img/gift-icon.svg");
 }
 
-.reason {
-  padding: 0 130px;
-  margin-top: 50px;
+.second-row {
+  margin-bottom: 37px;
 }
 
-.numbers {
+.card-number {
   line-height: 26px;
-  color: #333333;
   text-decoration: none;
   text-align: center;
+  padding: 5px 0;
 }
 
-.number-white::before,
-.number::before {
+.card-number::before {
   content: "-";
 }
 
-.number-white::after,
-.number::after {
+.card-number::after {
   content: "-";
 }
 
@@ -254,76 +235,77 @@ body {
 .question {
   font-size: 30px;
   line-height: 36px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .invite-to-form {
   line-height: 24px;
-  padding: 32px 400px;
+  margin: 43px 400px;
 }
 
-.form-btn {
+.searching-form-button {
   display: block;
   outline: none;
   border: none;
   background-color: #766357;
   cursor: pointer;
-  padding: 20px;
+  padding: 35px;
   text-transform: uppercase;
-  line-height: 26px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   width: 568px;
 }
 
-.form-btn:hover {
+.searching-form-button:hover {
   background-color: #604e43;
 }
 
-.form-btn:active {
+.searching-form-button:active {
   color: #857871;
   background-color: #503e33;
 }
-
 
 /* Форма */
 
 .map {
   background-image: url(../img/index-map.jpg);
-    background-repeat: no-repeat;
-    height: 594px;
-    position: relative;
+  background-repeat: no-repeat;
+  padding-bottom: 198px;
 }
 
 .searching-form {
-  display: inline-block;
   box-sizing: border-box;
   width: 568px;
   line-height: 26px;
   font-weight: bold;
   background-color: #ffffff;
-  position: absolute;
-  left: 316px;
-  padding: 54px;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
-  padding: 54px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px 0 #333333;
   margin: 0 auto;
+  padding: 54px;
+  box-shadow: 0 5px 15px 0 #000000;
 }
 
-.form-element {
+.form-row {
   display: flex;
   align-items: center;
   padding-bottom: 26px;
 }
 
-.label {
-  padding-right: 20px;
+.enter-row-description {
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.exit-row-description {
+  margin-right: 17px;
+  white-space: nowrap;
+}
+
+.label-adults {
+  margin-right: 35px;
+}
+
+.label-children {
+  margin-right: 25px;
 }
 
 .date-form {
@@ -331,9 +313,11 @@ body {
   border: none;
   font-weight: bold;
   line-height: 26px;
-  padding: 5px 195px 5px 5px;
+  width: 346px;
+  padding: 6px 0px 6px 10px;
   cursor: pointer;
-  background-image: url(../img/calendar.png);
+  background-image: url("../img/calendar.svg");
+  fill: #cacaca;
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
@@ -341,12 +325,14 @@ body {
 .date-form:hover {
   background-color: #ebebeb;
   background-image: url("../img/calendar.svg");
+  fill: #000000;
 }
 
 .date-form:focus {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  background-image: url("../img/calendar-focus.png");
+  background-image: url("../img/calendar.svg");
+  fill: #81b3d2;
 }
 
 .visitors {
@@ -360,7 +346,6 @@ body {
 
 .change-quantity-adults {
   display: flex;
-  padding-left: 20px;
 }
 
 .volume {
@@ -386,7 +371,7 @@ body {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
-  text-align: center;
+  text-align: right;
   border: none;
   font-weight: bold;
   outline: none;
@@ -414,24 +399,23 @@ body {
   color: #88b6d1;
 }
 
-
-
-
 /*******************************
 
-           FOOTER
+FOOTER
 
 *********************************/
 
 .footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   padding: 23px 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
   margin-top: -120px;
-  width: 1200px;
+}
+
+.visitsedona {
+  margin-left: 125px;
+  margin-right: 223px;
 }
 
 .footer-social {
@@ -441,14 +425,10 @@ body {
 
 .social-item {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
   margin-right: 10px;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-  cursor: pointer;
 }
 
 .social-item:hover {
@@ -490,13 +470,13 @@ body {
 }
 
 .final {
-  min-width: 210px;
   display: flex;
-  justify-content: space-around;
+  margin-left: 225px;
 }
 
 .creater {
   align-self: center;
+  margin-right: 5px;
 }
 
 .website {
@@ -515,11 +495,9 @@ body {
   background-image: url("../img/logo-active.png");
 }
 
-
-
 /*****************************************************************************
 
-                                   SHOP
+SHOP
 
 *****************************************************************************/
 
