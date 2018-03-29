@@ -543,6 +543,7 @@ SHOP
   align-items: center;
   flex-basis: 50%;
   justify-content: space-between;
+  margin-left: 30px;
 }
 
 .selection-criterion {
