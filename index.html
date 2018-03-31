@@ -119,6 +119,28 @@
       <a class="creater-link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
     </div>
   </footer>
+  <script>
+    var button = document.querySelector(".searching-form-button");
+
+    var popup = document.querySelector(".searching-form");
+    var close = popup.querySelector(".searching-form-button");
+
+    var form = popup.querySelector("form");
+
+    button.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("searching-form-show");
+});
+
+close.addEventListener("click", function (evt) {
+evt.preventDefault();
+popup.classList.remove("searching-form-show");
+});
+
+form.addEventListener("submit", function (evt) {
+evt.preventDefault();
+});
+  </script>
 </body>
 
 </html>

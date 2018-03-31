@@ -277,6 +277,7 @@ body {
 }
 
 .searching-form {
+  visibility: hidden;
   box-sizing: border-box;
   width: 568px;
   line-height: 26px;
@@ -286,6 +287,32 @@ body {
   padding: 54px;
   box-shadow: 0 5px 15px 0 #000000;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.searching-form-show {
+  display: block;
+  visibility: visible;
+  animation: bounce 0.6s;
+}
+
 
 .form-row {
   display: flex;
@@ -319,8 +346,6 @@ body {
   width: 346px;
   padding: 6px 0px 6px 10px;
   cursor: pointer;
-  background-image: url("../img/calendar.svg");
-  fill: #cacaca;
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
@@ -335,7 +360,12 @@ body {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   background-image: url("../img/calendar.svg");
-  fill: #81b3d2;
+  fillx: #81b3d2;
+}
+
+.date-form::after {
+  background-image: url("../img/calendar.svg");
+  fill: #cacaca;
 }
 
 .guests-quantity {
@@ -447,7 +477,7 @@ body {
 }
 
 .social-twitter:active {
-  background-image: url("../img/twitter-active.png");
+
 }
 
 .social-facebook {
@@ -457,7 +487,7 @@ body {
 }
 
 .social-facebook:active {
-  background-image: url("../img/fb-active.png");
+
 }
 
 .social-youtube {
@@ -467,7 +497,7 @@ body {
 }
 
 .social-youtube:active {
-  background-image: url("../img/youtube-active.png");
+
 }
 
 .creater {
