@@ -831,6 +831,7 @@ body {
   color: transparent;
   background-image: url("../img/star.svg");
   background-repeat: no-repeat;
+  margin-left: 5px;
   width: 18px;
   height: 17px;
 }
