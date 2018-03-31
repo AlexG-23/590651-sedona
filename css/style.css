@@ -507,6 +507,10 @@ body {
 
 *****************************************************************************/
 
+.checkbox-hidden {
+  display: none;
+}
+
 .selection-hotel {
   display: flex;
   flex-direction: column;
@@ -559,23 +563,61 @@ body {
   flex-wrap: wrap;
 }
 
-.selection-item {
+.checkbox {
   display: flex;
   color: white;
-  align-items: center;
-  padding-top: 25px;
+  align-content: center;
+  padding-top: 20px;
 }
 
-.label-shop {
-  color: white;
+
+.checkbox label::before{
+    content: "";
+    display: inline-block;
+
+    height: 23px;
+    width: 23px;
+
+    border: 2px solid;
+    border-radius: 5px;
 }
 
-.checkbox-checked {
-  background-image: url("../img/checkbox-on.svg")
+.checkbox label::after {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 24px;
+    border-left: 5px solid;
+    border-bottom: 5px solid;
+
+    transform: rotate(-45deg);
 }
 
-.checkbox {
-  background-image: url("../img/checkbox-off.svg");
+.checkbox label {
+    position: relative;
+}
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+}
+.checkbox label::before {
+    top: 3px;
+}
+.checkbox label::after {
+    left: 4px;
+    top: 0px;
+}
+
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+.checkbox-label {
+  padding: 5px 40px;
 }
 
 .cost {
@@ -665,7 +707,6 @@ body {
 
 .sorting-item-button:active {
   color: #000000;
-  border: none;
 }
 
 .by-cost {
@@ -673,37 +714,24 @@ body {
   color: #81b3d2;
 }
 
-.sorting-up-dir {
-  background-image: url("../img/icon-up-dir.svg");
-  background-repeat: no-repeat;
-  fill: #cacaca;
+.sorting-dir {
   border: none;
-  width: 11px;
-  height: 10px;
+  outline: none;
 }
 
-.sorting-up-dir:hover {
-  fill: #ffffff;
-}
-
-.sorting-up-dir:active {
+.active-icon-dir {
   fill: #81b3d2;
 }
 
-.sorting-down-dir {
-  background-image: url("../img/icon-down-dir.svg");
-  background-repeat: no-repeat;
-  border: none;
-  margin-left: 5px;
-  width: 11px;
-  height: 10px;
+.icon-dir {
+  fill: #cacaca;
 }
 
-.sorting-down-dir:hover {
-  fill: #ffffff;
+.icon-dir:hover {
+  fill: #000000;
 }
 
-.sorting-down-dir:active {
+.icon-dir:active {
   fill: #81b3d2;
 }
 
