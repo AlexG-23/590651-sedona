@@ -272,9 +272,14 @@ body {
 /* Форма */
 
 .map {
-  background-image: url(../img/index-map.jpg);
-  background-repeat: no-repeat;
-  padding-bottom: 198px;
+  width: 1200px;
+  max-height: 594px;
+}
+
+.map iframe {
+  border: none;
+  width: 1200px;
+  height: 594px;
 }
 
 .searching-form {
@@ -307,7 +312,14 @@ body {
 .searching-form-show {
   display: block;
   visibility: visible;
-  animation: bounce 1s;
+  animation: bounce 2s;
+  position: absolute;
+  left: 356px;
+  top: 2191px;
+}
+
+.searching-form-hide {
+  display: none;
 }
 
 .form-row {
@@ -444,7 +456,7 @@ body {
   align-items: center;
   padding: 36px 100px 36px 130px;
   background-color: rgba(255, 255, 255, 0.9);
-  margin-top: -120px;
+  margin-top: -124px;
 }
 
 .footer-social {
@@ -529,7 +541,6 @@ body {
 
 .hotel-searching-form {
   display: flex;
-  justify-content: space-around;
   flex-wrap: nowrap;
 }
 
@@ -540,19 +551,121 @@ body {
 }
 
 .criterion:first-of-type {
-  flex-basis: 25%;
-  margin-left: 73px;
+  margin-left: 75px;
 }
 
 .criterion:nth-of-type(2) {
-  flex-basis: 20%;
-  margin-right: 200px;
+  margin-left: 105px;
 }
 
-.criterion:last-of-type {
-  align-items: center;
-  flex-basis: 50%;
-  justify-content: space-between;
+.filter-range {
+  color: #ffffff;
+  margin-left: 310px;
+}
+
+.filter-range-title {
+  margin: 25px 0 10px 0;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price, .price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.min-price-value, .max-price-value {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .selection-criterion {
@@ -570,50 +683,48 @@ body {
   padding-top: 20px;
 }
 
-
-.checkbox label::before{
-    content: "";
-    display: inline-block;
-
-    height: 23px;
-    width: 23px;
-
-    border: 2px solid;
-    border-radius: 5px;
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  border: 2px solid;
+  border-radius: 5px;
 }
 
 .checkbox label::after {
-    content: "";
-    display: inline-block;
-    height: 10px;
-    width: 24px;
-    border-left: 5px solid;
-    border-bottom: 5px solid;
-
-    transform: rotate(-45deg);
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 24px;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  transform: rotate(-45deg);
 }
 
 .checkbox label {
-    position: relative;
+  position: relative;
 }
-.checkbox label::before,
-.checkbox label::after {
-    position: absolute;
+
+.checkbox label::before, .checkbox label::after {
+  position: absolute;
 }
+
 .checkbox label::before {
-    top: 3px;
+  top: 3px;
 }
+
 .checkbox label::after {
-    left: 5px;
-    top: 3px;
+  left: 5px;
+  top: 3px;
 }
 
-.checkbox input[type="checkbox"] + label::after {
-    content: none;
+.checkbox input[type="checkbox"]+label::after {
+  content: none;
 }
 
-.checkbox input[type="checkbox"]:checked + label::after {
-    content: "";
+.checkbox input[type="checkbox"]:checked+label::after {
+  content: "";
 }
 
 .checkbox-label {

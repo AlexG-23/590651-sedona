@@ -52,7 +52,7 @@
     <div class="header-shop-img"></div>
     <form class="hotel-searching-form">
       <div class="criterion">
-        <span class="selection-criterion">Инфраструктура:</span>
+        <div class="selection-criterion">Инфраструктура:</div>
         <div class="checkbox">
           <input class="checkbox-hidden" id="pool" type="checkbox" checked>
           <label for="pool">
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="criterion">
-        <span class="selection-criterion">Тип жилья:</span>
+        <div class="selection-criterion">Тип жилья:</div>
         <div class="checkbox">
           <input class="checkbox-hidden" id="hotel" type="checkbox" checked>
           <label for="hotel">
@@ -93,14 +93,20 @@
           </label>
         </div>
       </div>
-      <div class="criterion">
-        <span class="selection-criterion cost">Стоимость в сутки (р):</span>
-        <div class="price-range">
-          <p class="diapason">От 0</p>
-          <p class="diapason">До 3000</p>
+      <div class="filter-range">
+        <div class="filter-range-title">Стоимость в сутки (р):</div>
+        <div class="price-controls">
+          <label class="min-price">от <input class="min-price-value" type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input class="max-price-value" type="text" name="max-price" value="3000"></label>
         </div>
-        <input class="range" type="range" min="0" max="3000">
-        <button class="submit-button" type="submit">Показать</button>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+        <button class="btn-transparent" type="submit">Показать</button>
       </div>
     </form>
 
@@ -230,6 +236,7 @@
       </a>
     </div>
   </footer>
+
 </body>
 
 </html>
