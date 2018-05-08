@@ -271,11 +271,6 @@ body {
 
 /* Форма */
 
-.map {
-  width: 1200px;
-  max-height: 594px;
-}
-
 .map iframe {
   border: none;
   width: 1200px;
@@ -313,13 +308,6 @@ body {
   display: block;
   visibility: visible;
   animation: bounce 2s;
-  position: absolute;
-  left: 356px;
-  top: 2191px;
-}
-
-.searching-form-hide {
-  display: none;
 }
 
 .form-row {
@@ -456,7 +444,6 @@ body {
   align-items: center;
   padding: 36px 100px 36px 130px;
   background-color: rgba(255, 255, 255, 0.9);
-  margin-top: -124px;
 }
 
 .footer-social {
