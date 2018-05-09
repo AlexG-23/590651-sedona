@@ -271,22 +271,22 @@ body {
 
 /* Форма */
 
-.map iframe {
-  border: none;
-  width: 1200px;
-  height: 594px;
+.map {
+   background-image: url("../img/map.jpg");
+   height: 595px;
 }
 
 .searching-form {
   visibility: hidden;
   box-sizing: border-box;
   width: 568px;
+  max-height: 395px;
   line-height: 26px;
   font-weight: bold;
   background-color: #ffffff;
   margin: 0 auto;
   padding: 54px;
-  box-shadow: 0 5px 15px 0 #000000;
+  box-shadow: 0 0 15px 0 #000101;
 }
 
 @keyframes bounce {
@@ -444,6 +444,9 @@ body {
   align-items: center;
   padding: 36px 100px 36px 130px;
   background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  margin-top: -124px;
+  width: 970px;
 }
 
 .footer-social {
