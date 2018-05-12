@@ -293,6 +293,7 @@ body {
 .map {
   background-image: url("../img/map.jpg");
   height: 595px;
+  margin-bottom: -121px;
 }
 
 .searching-form {
@@ -448,9 +449,6 @@ body {
   align-items: center;
   padding: 36px 100px 36px 130px;
   background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  margin-top: -124px;
-  width: 970px;
 }
 
 .footer-social {
@@ -662,7 +660,7 @@ body {
   background: #ffffff;
 }
 
-.selection-criterion {
+.search-criterion {
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
@@ -945,12 +943,4 @@ body {
 .grade {
   background-color: #f2f2f2;
   padding: 3px 15px;
-}
-
-.footer-shop {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 36px 100px 36px 130px;
-  background-color: rgba(255, 255, 255, 0.8);
 }
