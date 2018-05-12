@@ -26,6 +26,21 @@
   font-style: normal;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 html {
   padding: 0;
   margin: 0;
@@ -269,7 +284,11 @@ body {
   background-color: #503e33;
 }
 
-/* Форма */
+/****************
+
+     Форма
+
+*****************/
 
 .map {
   background-image: url("../img/map.jpg");
@@ -287,21 +306,6 @@ body {
   margin: 0 auto;
   padding: 54px;
   box-shadow: 0 0 15px 0 #000101;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-  70% {
-    transform: translateY(30px);
-  }
-  90% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .searching-form-show {
@@ -683,37 +687,35 @@ body {
 }
 
 .checkbox label::after {
-  content: "";
-  display: inline-block;
   height: 10px;
-  width: 24px;
+  width: 19px;
   border-left: 5px solid;
   border-bottom: 5px solid;
   transform: rotate(-45deg);
 }
 
-.checkbox label {
+.label {
   position: relative;
 }
 
-.checkbox label::before, .checkbox label::after {
+.label::before, .label::after {
   position: absolute;
 }
 
-.checkbox label::before {
+.label::before {
   top: 3px;
 }
 
-.checkbox label::after {
+.label::after {
   left: 5px;
   top: 3px;
 }
 
-.checkbox input[type="checkbox"]+label::after {
+.checkbox input+label::after {
   content: none;
 }
 
-.checkbox input[type="checkbox"]:checked+label::after {
+.checkbox input:checked+label::after {
   content: "";
 }
 
