@@ -272,8 +272,8 @@ body {
 /* Форма */
 
 .map {
-   background-image: url("../img/map.jpg");
-   height: 595px;
+  background-image: url("../img/map.jpg");
+  height: 595px;
 }
 
 .searching-form {
