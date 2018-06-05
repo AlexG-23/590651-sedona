@@ -26,7 +26,7 @@
   font-style: normal;
 }
 
-@keyframes bounce {
+@keyframes emergence {
   0% {
     transform: translateY(-2000px);
   }
@@ -38,6 +38,15 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes dissipation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -307,13 +316,17 @@ body {
   margin: 0 auto;
   padding: 54px;
   box-shadow: 0 0 15px 0 #000101;
+  animation-name: dissipation;
+  animation-duration: 1s;
 }
 
 .searching-form-show {
   display: block;
   visibility: visible;
-  animation: bounce 2s;
+  animation-name: emergence;
+  animation-duration: 2s;
 }
+
 
 .form-row {
   display: flex;
@@ -668,6 +681,15 @@ body {
   flex-wrap: wrap;
 }
 
+.wubba {
+  display: none;
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.wubba:checked {
+  background-image: url("../img/checkbox-on.svg")
+}
+
 .checkbox {
   display: flex;
   color: white;
@@ -709,16 +731,16 @@ body {
   top: 3px;
 }
 
-.checkbox input+label::after {
+.wubba+label::after {
   content: none;
 }
 
-.checkbox input:checked+label::after {
+.wubba:checked+label::after {
   content: "";
 }
 
 .checkbox-label {
-  padding: 5px 40px;
+  padding: 0 40px;
 }
 
 .cost {
