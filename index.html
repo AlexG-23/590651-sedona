@@ -163,16 +163,24 @@
     </div>
   </footer>
   <script>
-    var button = document.querySelector(".searching-form-button");
+    function (".searching-form-button") {
+      var popup = document.classlist("searching-form");
 
-    var popup = document.querySelector(".searching-form");
+      if (popup.classlist) {
+        popup.classlist.toggle("searching-form-show");
+      }
+      else {
+        var classes = popup.classlist.split("");
+        var i = classes.indexOf(".searching-form-show");
 
-    var form = popup.querySelector("form");
-
-    button.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("searching-form-show");
-    });
+        if (i >= 0) {
+          classes.splice(i, 1);
+        else
+          classes.push(".searching-form-show");
+          popup.className = classes.join("");
+        }
+      }
+    }
   </script>
 </body>
 

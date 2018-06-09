@@ -315,7 +315,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   padding: 54px;
-  box-shadow: 0 0 15px 0 #000101;
+  box-shadow: 0 0 10px 0 #000101;
   animation-name: dissipation;
   animation-duration: 1s;
 }
